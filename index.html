@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temple</title>
+    <link rel="stylesheet" href="style.css"></link>
+</head>
+<body>
+
+    <div class="main">
+        <div class="nav_bar">
+            <h2 class="logo">Shri Kashi Vishwanatha Temple</h2>
+            <div class="icon">
+    
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="Index.html">Home</a></li>
+                    <li><a href="Introduction.html">Introduction</a></li>
+                    <li><a href="History.html">History</a></li>
+                    <li><a href="Location.html">Location</a></li>
+                    <li><a href="Images.html">Images</a></li>
+                  
+                </ul>
+            </div>
+        </div>
+    </div>
+    <p></p>
+    <style>
+   * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Ensures padding and border are included in element's total width and height */
+}
+
+/* Default styles */
+body {
+    background-color: #f2f2f2;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.main {
+    width: 100%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) 50%), url(shiva.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh; /* Adjusted to 100vh for a full viewport height */
+}
+
+.nav_bar {
+    width: 100%;
+    max-width: 1200px; /* Prevents the navbar from becoming too wide on large screens */
+    margin: auto;
+    padding: 0 10px; /* Provides padding to avoid content touching edges */
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+}
+
+.icon {
+    /* Placeholder for icons, if needed */
+}
+
+.logo {
+    font-size: 25px;
+    padding-left: 20px;
+}
+
+.menu {
+    display: flex;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+}
+
+ul li {
+    margin-left: 30px; /* Adjusted margin for better spacing */
+    font-size: 18px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.4s ease-in-out;
+}
+
+ul li a:hover {
+    color: #ff7200;
+}
+
+/* Mobile View */
+@media (max-width: 768px) {
+    .nav_bar {
+        flex-direction: column; /* Stack logo and menu vertically on small screens */
+        align-items: flex-start; /* Align items to the start of the container */
+    }
+
+    .logo {
+        font-size: 20px; /* Smaller font size for the logo on mobile */
+        padding-left: 0; /* Remove left padding on mobile */
+    }
+
+    .menu {
+        width: 100%; /* Full width for the menu on mobile */
+    }
+
+    ul {
+        flex-direction: column; /* Stack menu items vertically on mobile */
+        align-items: flex-start; /* Align items to the start of the container */
+        padding-left: 0; /* Remove padding on mobile */
+    }
+
+    ul li {
+        margin: 10px 0; /* Vertical margin between items */
+    }
+}
+
+</style>
+</body>
+</html>
